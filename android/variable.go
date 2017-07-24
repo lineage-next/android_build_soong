@@ -67,6 +67,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Needs_text_relocations struct {
+			Cppflags []string
+		}
+
 		Override_rs_driver struct {
 			Cflags []string
 		}
@@ -147,6 +151,7 @@ type productVariables struct {
 	EnableCFI                  *bool `json:",omitempty"`
 	Device_uses_hwc2           *bool `json:",omitempty"`
 	Has_legacy_camera_hal1     *bool `json:",omitempty"`
+	Needs_text_relocations     *bool `json:",omitempty"`
 	Treble                     *bool `json:",omitempty"`
 	Uses_media_extensions      *bool `json:",omitempty"`
 	Pdk                        *bool `json:",omitempty"`
